@@ -1,0 +1,43 @@
+html{
+    font-family:"Arial";
+    background: #000000;
+    padding-left: 8%;
+    padding-right: 8%;
+    text-align: left;
+}
+
+h2 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+.masonry {
+  columns: 3 26em;
+  -moz-columns: 3 26em;
+  comumn-gap: 2em;
+  -moz-column-gap: 2em;
+}
+
+.masonry .element {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+.button {
+    background-color: #b22222;
+    border-style: groove;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+.form {
+
+}
+
+.template {
+  display: none;
+}

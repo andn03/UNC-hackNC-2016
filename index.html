@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Newsman</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/Go.js"></script>
+  <script type="text/javascript" src="js/organizer.js"></script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="input col-md-3">
+        <h2>Set up</h2>
+        <div>
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="name" class="form-control" id="exampleInputName1" placeholder="Name">
+            </div>
+            <select id="mySelect" class="form-control">
+              <option value="http://rss.nytimes.com/services/xml/rss/nyt/US.xml">New York Times</option>
+              <option value="http://feeds.abcnews.com/abcnews/usheadlines">ABC</option>
+              <option value="http://www.economist.com/feeds/print-sections/71/united-states.xml">Economist</option>
+            </select>
+
+            <button type="button" class="btn btn-default btn-lg" id="clickGo">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div class="output col-md-9">
+        <div class="masonry">
+          <article class="element template">
+            <h2 class="title"><span class="title-text"></span> <small class="date"></small></h2>
+            <p class="lead content"></p>
+            <a class="link" href="">Read more...</a>
+          </article>
+        </div>
+      </div>
+  </div>
+</div>
+</body>
+</html>
